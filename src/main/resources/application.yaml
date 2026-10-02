@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: prueba
+  datasource:
+    url: jdbc:mysql://localhost:3306/prueba?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: martha200714
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
